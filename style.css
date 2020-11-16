@@ -9,3 +9,10 @@
 body{
     background-color: orange;
 }
+nav{
+    margin-bottom: 200px;
+}
+.kosar{
+    margin-top: -200px;
+    background-color: white;
+}

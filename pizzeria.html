@@ -36,51 +36,75 @@
 
     <div class="container">
         <div class="kosar">
-            <h3 id="tar">Kosár tartalma:</h3>
+            <h3>Kosár tartalma:</h3>
+            <h3 id="tar">Tegyen valamit a kosárba<h3>
+            <button onclick="reset()">Kosár ürítése</button>
         </div>
-        <div class="rola">
-            <p>Pizzériánk szívesen fogadja az igazi olasz pizzaélményre vágyókat, az XY.utca 12 szám alatt. Pizzák
-                mellet más különféle gyorsételeket, főételeket, leveseket és desszerteket is kínálunk.</p>
-        </div>
+
         <div class="pizzak" id="pizza">
-            <div id="marg">
-                <img src="margarita.jpg">
-                <p>sajtos,paradicsomos<br>1000 Ft</p>
+            <div class="row">
+                <div id="marg" class="col-sm">
+                    <img src="margarita.jpg"><br>
+                    Margarita<br>
+                    sajt,paradicsom<br>1000 Ft<br>
+                    <button onclick="Ar10()">Kosárba</button>
+                </div>
+                <div id="gomb" class="col-sm">
+                    <img src="gombas.jpg">
+                    <br>Gombás pizza<br>
+                    sajt,gomba<br>1000 Ft<br>
+                    <button onclick="Ar10()">Kosárba</button>
+                </div>
+                <div id="sonk" class="col-sm">
+                    <img src="sonkas.jpg">
+                    <br>Sonkás pizza<br>
+                    sajt,sonka<br>1200 Ft<br>
+                    <button onclick="Ar12()">Kosárba</button>
+                </div>
             </div>
-            <div id="gomb">
-                <img src="gombas.jpg">
-                <p>sajt,gomba<br>1000 Ft</p>
+            <div class="row">
+                <div id="szal" class="col-sm">
+                    <img src="szalamis.jpg">
+                    <br>Szalámis pizza<br>
+                    sajt,szalámi<br>1200 Ft<br>
+                    <button onclick="Ar12()">Kosárba</button>
+                </div>
+                <div id="pepp" class="col-sm">
+                    <img src="pepperoni.jpg">
+                    <br>Pepperonis pizza<br>
+                    sajt,sonka,pepperoni<br>1200 Ft<br>
+                    <button onclick="Ar12()">Kosárba</button>
+                </div>
+                <div id="rant" class="col-sm">
+                    <img src="rantottas.jpg">
+                    <br>Rantottás pizza<br>
+                    sajt,kolbász,rántotta<br>1300 Ft<br>
+                    <button onclick="Ar13()">Kosárba</button>
+                </div>
             </div>
-            <div id="sonk">
-                <img src="sonkas.jpg">
-                <p>sajt,sonka<br>1200 Ft</p>
-            </div>
-            <div id="szal">
-                <img src="szalamis.jpg">
-                <p>sajt,szalámi<br>1200 Ft</p>
-            </div>
-            <div id="pepp">
-                <img src="pepperoni.jpg">
-                <p>sajt,sonka,pepperoni<br>1200 Ft</p>
-            </div>
-            <div id="rant">
-                <img src="rantottas.jpg">
-                <p>sajt,kolbász,rántotta<br>1300 Ft</p>
-            </div>
-            <div id="haw">
-                <img src="hawaii.jpg">
-                <p>sajt,sonka,ananász<br>1400 Ft</p>
-            </div>
-            <div id="negy">
-                <img src="negysajtos.jpg">
-                <p>négysajt(parmezán,mozzarella,trapista,kéksajt)<br>1400 Ft</p>
-            </div>
-            <div id="best">
-                <img src="bestfm.jpg">
-                <p>sajt,gyroshús,bacon,jalapeno<br>1500 Ft</p>
+            <div class="row">
+                <div id="haw" class="col-sm">
+                    <img src="hawaii.jpg">
+                    <br>Hawaii pizza<br>
+                    sajt,sonka,ananász<br>1400 Ft<br>
+                    <button onclick="Ar14()">Kosárba</button>
+                </div>
+                <div id="negy" class="col-sm">
+                    <img src="negysajtos.jpg">
+                    <br>Négysajtos<br>
+                    négysajt(parmezán,mozzarella,trapista,kéksajt)<br>1400 Ft<br>
+                    <button onclick="Ar14()">Kosárba</button>
+                </div>
+                <div id="best" class="col-sm">
+                    <img src="bestfm.jpg">
+                    <br>Bestfm pizza<br>
+                    sajt,gyroshús,bacon,jalapeno<br>1500 Ft<br>
+                    <button onclick="Ar15()">Kosárba</button>
+                </div>
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
